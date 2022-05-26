@@ -1,0 +1,22 @@
+{
+  "name": "sorcererkillerbot",
+  "version": "1.0.0",
+  "description": "A music bot by David",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/main.js",
+    "start": "node ./src/main.js"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.0",
+    "ffmpeg-static": "^4.4.1",
+    "yt-search": "^2.10.3",
+    "ytdl-core": "^4.11.0",
+    "ytpl": "^2.3.0"
+  }
+}
