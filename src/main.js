@@ -8,6 +8,13 @@ bot.events = new Discord.Collection();
   require(`./handlers/${handler}`)(bot, Discord);
 })
 
+client.on("messageCreate", (message) => {
+  if (message.author.bot) return;
+  console.log(`${message.author.tag}] : ${message.content}`);
+  if (message.content === "hi toji") {
+    message.channel.send("Pfft What do you want?!");
+  };
+
 ffmpeg_options = {
   'options': '-vn',
   "before_options": "-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5"
